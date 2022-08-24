@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name-SURNAME</label> <br />
+      <input type="text" id="name" /> <br />
+      <label for="email">E-mail</label> <br />
+      <input type="email" name="email" id="email" /> <br />
+      <label for="pw">Password</label> <br />
+      <input type="password" id="pw" name="pw" /> <br />
+      <label for="dt">Date</label> <br />
+      <input type="date" name="dt" id="dt" /> <br />
+      <br />
+
+      Gender <br />
+      Female
+      <input type="radio" name="gender" id="female" checked />
+      Male
+      <input type="radio" name="gender" id="male" />
+      Other
+      <input type="radio" name="gender" id="other" /> <br />
+
+      Hobbies <br />
+      Technology
+      <input type="checkbox" name="tech" id="tech" />
+      Art
+      <input type="checkbox" name="art" id="art" checked />
+      Dance
+      <input type="checkbox" name="dance" id="dance" /> <br />
+
+      degree <br />
+      <select name="degree" id="degree">
+        <option value="bachelor">Lisans</option>
+        <option value="msc">Yüksek Lisans</option>
+        <option value="phd">Doktora</option>
+      </select>
+      <br />
+
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Your message"
+      ></textarea>
+      <br />
+
+      <input type="submit" value="gönder" />
+      <button type="submit">gönder</button> <br />
+
+      <input type="reset" value="sıfırla" />
+      <button type="reset">sıfırla</button>
+    </form>
+  </body>
+</html>
+<!--iki farklı yoldan buton oluşturabiliriz; input ya da button kullanarak.
+radio button ile sadece bir seçenek seçme hakkı veriyoruz, bunun için nameler aynı olmalı.
+checked ile sayfa yenilendiğinde de işaretlemeyi orda tutabiliriz.-->
