@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        /* flex-direction: row;  bu default olarak gelen bi özellik olduğu için display flex direkt olarak kullanır. 
+        flex-direction: column; bu da yönü aşağıya doğru vermemizi sağlar. */
+        min-height: 600px;
+        background-color: blueviolet;
+        /* justify-content: space-around; */
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap; /*sağa doğru sığdırma işlemi yapmaz, sığmayan noktada aşağı satırdan devam etmesini sağlar.*/
+      }
+      .box {
+        text-align: center;
+        background-color: aqua;
+        width: 150px;
+        height: 150px;
+        border: 2px black solid;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </body>
+</html>
+<!--yataydaki işlemler için justify content kullanırken dikeydeki işlemler için align items kullanıyoruz.
+    (flex direction:row için bu durum geçerli.flex direction:column olursa tam tersi şekilde çalışır.)-->

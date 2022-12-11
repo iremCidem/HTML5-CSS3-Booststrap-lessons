@@ -1,0 +1,13 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+
+}
+.dark{
+    background-color: darkmagenta;
+}
+.light{
+    color:white;
+}

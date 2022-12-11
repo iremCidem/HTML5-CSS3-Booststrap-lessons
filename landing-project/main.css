@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+li{
+    text-transform: capitalize;
+    list-style-type: none;
+    display: flex;
+}
+h1{
+    text-align: center;
+}
+#navbar ul{
+    height: 60px;
+    display: flex;
+    padding: 10px ;
+}
+#navbar ul li a { 
+    padding: 10px;
+}
+#navbar ul li a:hover {
+    background-color: darkorchid;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.dark {
+    background-color: darkmagenta;
+}
+
+.light {
+    color: white;
+}
+
+

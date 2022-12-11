@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .para1::after {
+        content: "bitiş";
+        color: red;
+      }
+      .para1::first-letter {
+        font-size: 55px;
+      }
+      .para1::before {
+        content: "başlangıç";
+        color: blue;
+        text-transform: capitalize;
+      }
+      .para1::after {
+        content: url(images/css.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="para1">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, debitis
+      error! Omnis modi itaque consectetur eveniet, porro nisi possimus hic.
+      Impedit sint voluptates architecto cum quia? Culpa cumque dolor ipsum!
+    </p>
+  </body>
+</html>

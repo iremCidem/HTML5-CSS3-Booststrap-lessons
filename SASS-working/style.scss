@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//comment satırı scss te bu şekilde kullanılır.
+
+$color-primary: #f9ed;
+$color-secondary: #f9ed69;
+$color-tertiary: #b83b5e; //bu rengi bir değere atadık, bu şekilde sadece buradaki rengi değiştirerek bu ismin kullandıldığı tüm alanlarda değişiklik yapmış olacağız.
+$width-button: 250px;
+
+@mixin clearfix {
+
+    //burada sonradan tekrar çağırabileceğimiz bir kod satırı oluşturduk.
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}
+
+@mixin text-style {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-tertiary;
+
+}
+
+@function divide($a, $b) {
+    //funksiyon kurarken içine iki tane değişken atıyoruz, return ile yapacağı işlemi söylüyoruz.
+    @return $a / $b;
+}
+
+nav {
+    margin: divide(60, 2) *1px; //sonuç 30px
+    background-color: $color-primary;
+    @include clearfix; //bu şekiilde önceden hazırladığımız kod dizinini çağırdık.
+
+
+}
+
+.navigation {
+    float: left;
+    list-style: none;
+
+    li {
+        //nested selector (iç içe seçici) dediğimiz yöntemle .navigation içindeki li'yi bu şekilde stylleyebiliriz.
+        display: inline-block;
+        margin-left: 15px;
+
+        &:first-child {
+            padding: 50px;
+        }
+
+        a {
+            @include text-style;
+        }
+    }
+}
+
+.button {
+    float: right;
+
+    a {
+
+        &:link {
+            display: inline-block;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            background-color: $color-tertiary;
+            width: $width-button;
+            border: 5px;
+        }
+
+        &:hover {
+            background-color: darken($color-tertiary, 15%); //belirtilen renge göre 15% daha koyu bir renk atar.
+
+        }
+    }
+}

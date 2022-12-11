@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 50px;
+        height: 50px;
+        border: 2px black solid;
+        margin: 5px;
+      }
+      .outline {
+        width: 50%;
+        height: 150px;
+        display: flex;
+        background-color: aquamarine;
+        justify-content: center;
+        align-items: right;
+      }
+      .box1 {
+        /* order: 3;  ( sıralarıyla oynayabiliyoruz.*/
+        background-color: pink;
+        justify-self: flex-start;
+        flex-grow: 2; /*8 de2 alan kaplar. */
+      }
+      .box2 {
+        background-color: blueviolet;
+        align-self: flex-end;
+        flex-grow: 4; /*8 de4 alan kaplar. */
+      }
+      .box3 {
+        background-color: brown;
+        flex-grow: 2; /*8 de2 alan kaplar. */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outline">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+    </div>
+  </body>
+</html>
+<!--flex ,align item ve justify content özellikleri her zaman parent elemana uygulanır.-->

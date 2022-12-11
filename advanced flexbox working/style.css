@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* main axis yani yatayda hareket ederken kullanıyoruz.*/
+    align-items: center;/* cross axis yani düşeyde hareket ederken kullanıyoruz, default hali strech konumunda olur.*/
+    /* flex direction:column yaparsak, main axis ve cross axis yer değiştirir. (main axis düşeyde hareket olur.)*/
+    flex-wrap: wrap; /* en sağdaki elemandan başlayarak sırayla aşağı gönderiyor, ekran küçüldükçe göndermeye devam ediyor.*/
+}
+.item{
+    padding: 15px; 
+    margin: 25px;
+    background-color: blue;
+    flex-grow: 1; /* büyüyebildiğiniz kadar büyüyün anlamında*/
+
+}
+.i3{
+    height: 150px;
+    order: 1; /* en büyük önem sırası bunda olduğu için en sağa gitti.(diğerleri -1 ve 0 olduğu için)*/
+    flex-grow: 3; /* diğerlerine oranla 3 kat büyüdü.*/
+}
+.i4{
+    align-self: stretch; /* boyu en uzun olanla eşit hale geldi.*/
+    order: -1; /* sıralamada en öne geçti -1 en küçük olduğu için.*/
+}
+.i2{
+    flex-basis: 30%; 
+}

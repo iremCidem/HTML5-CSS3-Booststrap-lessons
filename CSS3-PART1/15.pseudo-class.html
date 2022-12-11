@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: yellow; /* henüz tıklanmadıysa sarı renk olsun.*/
+      }
+      a:hover {
+        color: red; /* üzerine gelince kırmızı olsun.*/
+      }
+
+      a:visited {
+        color: black; /*tıklandıktan sonraki rengi siyah olsun.*/
+      }
+      a {
+        text-decoration: none;
+      }
+      input {
+        font-size: 20px;
+        border-radius: 10px;
+        text-align: center;
+        border: 5px red solid;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">twitter</a>
+    <form>
+      <label for="information">Name-SURNAME</label> <br />
+      <input type="text" id="information" placeholder="Your name" />
+    </form>
+  </body>
+</html>
+<!--pseudo class imleçle bir etiketin üzerine gelindiğinde değişen durum olarak söylenebilir.-->
